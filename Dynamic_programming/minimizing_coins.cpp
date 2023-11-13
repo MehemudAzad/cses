@@ -29,7 +29,7 @@ void solve(){
     for (int&v : c) cin >> v;
 
     vector<int> dp(target+1,1e9);
-
+    //base case
     dp[0] = 0;
 
     for (int i = 1; i <= target; i++) {

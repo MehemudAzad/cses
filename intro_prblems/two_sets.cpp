@@ -27,31 +27,33 @@ int main(){
     
     if(n%4==1 || n%4==2){
         print("NO");
-    }
-    if(n%4==0){
+    }else {
+        if(n%4==0){
         print("YES");
         print(n/2);
         for(int i=3;i<=n;i+=4){
             cout<<i<< " "<< i-1<<" ";
-        }
-        cout<<endl;
+        }cout<<endl;
+        
         cout<<n/2<<endl;
         for(int i=1;i<=n;i+=4){
             cout<<i<<" "<<i+3<<" ";
         }
-    }else if(n%4==3){
-        print("YES");
-        print(n/2+1);
-        cout<<"1 "<<"2 ";
-        for(int i=6;i<=n;i+=4){
-            cout<<i<< " "<< i-1<<" ";
-        }
-        cout<<endl;
-        cout<<n/2<<endl;
-        cout<<"3 ";
-        for(int i=4;i<=n;i+=4){
-            cout<<i<<" "<<i+3<<" ";
+        }else{
+            print("YES");
+            print(n/2+1);
+            cout<<"1 "<<"2 "; //1 2 
+            for(int i=4;i<=n;i+=4){
+                cout<<i+1<< " "<< i+2<<" ";// 5 6 
+            }cout<<endl;
+
+            cout<<n/2<<endl;
+            cout<<"3 "; //3 
+            for(int i=4;i<=n;i+=4){
+                cout<<i<<" "<<i+3<<" ";//4 7
+            }
         }
     }
+    
     return 0;
 }  

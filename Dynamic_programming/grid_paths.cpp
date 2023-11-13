@@ -29,16 +29,16 @@ void solve(){
         string row;
         cin >> row;
         for (int j = 0; j < n; j++) {
-        if (row[j] == '.') {
-        if (i > 0) {
-        (dp[i][j] += dp[i-1][j]) %= mod;
-        }
-        if (j > 0) {
-        (dp[i][j] += dp[i][j-1]) %= mod;
-        }
-        } else {
-        dp[i][j] = 0;
-        }
+            if (row[j] == '.') {
+                if (i > 0) {
+                    (dp[i][j] += dp[i-1][j]) %= mod;
+                }
+                if (j > 0) {
+                    (dp[i][j] += dp[i][j-1]) %= mod;
+                }
+            } else {
+                dp[i][j] = 0;
+            }
         }
     }
     cout << dp[n-1][n-1] << endl;

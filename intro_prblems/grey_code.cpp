@@ -26,12 +26,12 @@ int main(){
     // cin>>t;
     while(t--){
         int n;cin>>n;
-        // int res =0;
-        for(int i=0;i<(1<<n);i++){
-            for(int j=n-1;j>=0;j--){
+
+        for(int i = 0; i < (1<<n); i++){
+            for(int j = n-1; j >= 0; j--){
                 if((i&(1<<j))==0){
                     printf("0");
-                }else{
+                }else{ 
                     printf("1");
                 }
             }

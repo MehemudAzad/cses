@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mr.x/Desktop/CP Problems/CSES",
-      "program": "/Users/mr.x/Desktop/CP Problems/CSES/build/Debug/outDebug"
+      "cwd": ".",
+      "program": "build/Debug/outDebug"
     }
   ]
 }
